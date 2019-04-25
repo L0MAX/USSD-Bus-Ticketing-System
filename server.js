@@ -29,40 +29,58 @@ app.post('*', (req, res) => {
     3. Toyota Hiace`
     res.send(response)
   } else if (text == '2') {
-    // Business logic for first level response
     let response = `CON Choose Your Prefered Vehicle To Kumasi
     1. VIP Bus
     2. Sprinter Benz Bus
     3. Toyota Hiace`
     res.send(response)
   } else if (text == '3') {
-    // Business logic for first level response
     let response = `CON Choose Your Prefered Vehicle To Tamale
     1. VIP Bus
     2. Sprinter
     3. Toyota Hiace`
     res.send(response)
   }else if (text == '1*1') {
-    // Business logic for first level response
     let response = `CON Choose Your VIP Bus Package
     1. Transit (Ho-Sogakofe-Accra) GHC 30
     2  Direct  (Ho-Accra)          GHC 24`
-    // let response = `END Your account number is ${accountNumber}
     res.send(response)
   }else if (text == '1*2') {
-        // Business logic for first level response
         let response = `CON Choose Your Sprinter Package
         1. Transit (Ho-Sogakofe-Accra) GHC 28
         2  Direct  (Ho-Accra)          GHC 23`
-        // let response = `END Your account number is ${accountNumber}
         res.send(response)
   }else if (text == '1*3') {
-            // Business logic for first level response
             let response = `CON Choose Your Toyota Hiace Package
-            1. Transit (Ho-Sogakofe-Accra) GHC 28
-            2  Direct  (Ho-Accra)          GHC 23`
-            // let response = `END Your account number is ${accountNumber}
+            1. Transit (Ho-Sogakofe-Accra) GHC 26
+            2  Direct  (Ho-Accra)          GHC 22`
             res.send(response)
+ }else if (text == '2*1') {
+                let response = `CON Choose Your VIP Bus Package
+                1. Transit (Ho-Accra-Kumasi) GHC 70
+                2  Direct  (Ho-Accra)          GHC 58`
+                res.send(response)
+              }else if (text == '2*2') {
+                    let response = `CON Choose Your Sprinter Package
+                    1. Transit (Ho-Accra-Kumasi) GHC 60
+                    2  Direct  (Ho-Accra)          GHC 50`
+                    res.send(response)
+              }else if (text == '2*3') {
+                        let response = `CON Choose Your Toyota Hiace Package
+                        1. Transit (Ho-Accra-Kumasi) GHC 63
+                        2  Direct  (Ho-Accra)          GHC 51`
+                        res.send(response)}else if (text == '3*1') {
+                            let response = `CON Choose Your VIP Bus Package
+                            1. Direct (Ho-Tamale) GHC 120`
+                            res.send(response)
+                          }else if (text == '3*2') {
+                                let response = `CON Choose Your Sprinter Package
+                                1. Transit (Ho-Tamale) GHC 130`
+                                res.send(response)
+                          }else if (text == '3*3') {
+                                    let response = `CON Choose Your Toyota Hiace Package
+                                    1. Transit (Ho-Tamale) GHC 140`
+                                    res.send(response)
   }else if (text == '1*1*1') {
         // Business logic for first level response
         let response = `CON Enter Mobile Money Wallet Number`
