@@ -16,7 +16,7 @@ app.post('*', (req, res) => {
   let {sessionId, serviceCode, phoneNumber, text} = req.body
   if (text == '') {
     // This is the first request. Note how we start the response with CON
-    let response = `CON Welcome to Aces Transport Services, Please Select Your Destination
+    let response = `CON Welcome to Aces Transport Services Ho Terminal, Please Select Your Destination
     1. Accra
     2. Kumasi
     3. Tamale`
@@ -44,10 +44,17 @@ app.post('*', (req, res) => {
     res.send(response)
   }else if (text == '1*1') {
     // Business logic for first level response
-    let accountNumber = 'ACC1001'
-    // This is a terminal request. Note how we start the response with END
-    let response = `END Your account number is ${accountNumber}`
+    let response = `CON Choose Your Package
+    1. Transit (Ho-Sogakofe-Accra) GHC 30
+    2  Direct  (Ho-Accra)          GHC 24`
+    // let response = `END Your account number is ${accountNumber}`
     res.send(response)
+  }else if (text == '1*1*1') {
+        // Business logic for first level response
+        let response = `CON Enter Mobile Money Wallet Number
+        1. Transit (Ho-Sogakofe-Accra) GHC 30`
+        // let response = `END Your account number is ${accountNumber}`
+        res.send(response)
   } else if (text == '1*2') {
     // This is a second level response where the user selected 1 in the first instance
     let balance = 'NGN 10,000'
