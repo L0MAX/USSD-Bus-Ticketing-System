@@ -23,16 +23,26 @@ app.post('*', (req, res) => {
     res.send(response)
   } else if (text == '1') {
     // Business logic for first level response
-    let response = `CON Choose Prefered Vehicle
+    let response = `CON Choose Your Prefered Vehicle To Accra
     1. VIP Bus
     2. Sprinter Benz Bus
     3. Toyota Hiace`
     res.send(response)
   } else if (text == '2') {
     // Business logic for first level response
-    let response = `END Your phone number is ${phoneNumber}`
+    let response = `CON Choose Your Prefered Vehicle To Kumasi
+    1. VIP Bus
+    2. Sprinter Benz Bus
+    3. Toyota Hiace`
     res.send(response)
-  } else if (text == '1*1') {
+  } else if (text == '3') {
+    // Business logic for first level response
+    let response = `CON Choose Your Prefered Vehicle To Tamale
+    1. VIP Bus
+    2. Sprinter Benz Bus
+    3. Toyota Hiace`
+    res.send(response)
+  }else if (text == '1*1') {
     // Business logic for first level response
     let accountNumber = 'ACC1001'
     // This is a terminal request. Note how we start the response with END
