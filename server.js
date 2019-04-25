@@ -15,7 +15,7 @@ app.get('*', (req, res) => {
 app.post('*', (req, res) => {
   let {sessionId, serviceCode, phoneNumber, text} = req.body
   if (text == '') {
-    // This is the first request. Note how we start the response with CON
+    // This is the first request.
     let response = `CON Welcome to Aces Transport Services Ho Terminal, Please Select Your Destination
     1. Accra
     2. Kumasi
@@ -39,20 +39,33 @@ app.post('*', (req, res) => {
     // Business logic for first level response
     let response = `CON Choose Your Prefered Vehicle To Tamale
     1. VIP Bus
-    2. Sprinter Benz Bus
+    2. Sprinter
     3. Toyota Hiace`
     res.send(response)
   }else if (text == '1*1') {
     // Business logic for first level response
-    let response = `CON Choose Your Package
+    let response = `CON Choose Your VIP Bus Package
     1. Transit (Ho-Sogakofe-Accra) GHC 30
     2  Direct  (Ho-Accra)          GHC 24`
-    // let response = `END Your account number is ${accountNumber}`
+    // let response = `END Your account number is ${accountNumber}
     res.send(response)
+  }else if (text == '1*2') {
+        // Business logic for first level response
+        let response = `CON Choose Your Sprinter Package
+        1. Transit (Ho-Sogakofe-Accra) GHC 28
+        2  Direct  (Ho-Accra)          GHC 23`
+        // let response = `END Your account number is ${accountNumber}
+        res.send(response)
+  }else if (text == '1*3') {
+            // Business logic for first level response
+            let response = `CON Choose Your Toyota Hiace Package
+            1. Transit (Ho-Sogakofe-Accra) GHC 28
+            2  Direct  (Ho-Accra)          GHC 23`
+            // let response = `END Your account number is ${accountNumber}
+            res.send(response)
   }else if (text == '1*1*1') {
         // Business logic for first level response
-        let response = `CON Enter Mobile Money Wallet Number
-        1. Transit (Ho-Sogakofe-Accra) GHC 30`
+        let response = `CON Enter Mobile Money Wallet Number`
         // let response = `END Your account number is ${accountNumber}`
         res.send(response)
   } else if (text == '1*2') {
