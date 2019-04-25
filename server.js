@@ -9,22 +9,24 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('*', (req, res) => {
-  res.send('This is tutorial App on creating your first USSD app in 5 minutes or less by Ajala Abdulsamii <kgasta@gmail.com>')
+  res.send('This is Aces hub Systems')
 })
 
 app.post('*', (req, res) => {
   let {sessionId, serviceCode, phoneNumber, text} = req.body
   if (text == '') {
     // This is the first request. Note how we start the response with CON
-    let response = `CON What would you want to check
-    1. My Account
-    2. My phone number`
+    let response = `CON Welcome to Aces Transport Services, Please Select Your Destination
+    1. Accra
+    2. Kumasi
+    3. Tamale`
     res.send(response)
   } else if (text == '1') {
     // Business logic for first level response
-    let response = `CON Choose account information you want to view
-    1. Account number
-    2. Account balance`
+    let response = `CON Choose Prefered Vehicle
+    1. VIP Bus
+    2. Sprinter Benz Bus
+    3. Toyota Hiace`
     res.send(response)
   } else if (text == '2') {
     // Business logic for first level response
