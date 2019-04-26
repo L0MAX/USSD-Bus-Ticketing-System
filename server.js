@@ -145,7 +145,7 @@ app.post('*', (req, res) => {
     // This is a second level response where the user selected 1 in the first instance
     let balance = 'NGN 10,000'
     // This is a terminal request. Note how we start the response with END
-    let response = `END Your balance is ${balance}`
+    // let response = `END Your balance is ${balance}`
     res.send(response)
   } else {
     res.status(400).send('Bad request!')
