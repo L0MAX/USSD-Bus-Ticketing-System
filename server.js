@@ -41,6 +41,7 @@ app.post('*', (req, res) => {
     3. Toyota Hiace`
     res.send(response)
   }else if (text == '1*1') {
+    //Level 2 for Accra
     let response = `CON Choose Your VIP Bus Package
     1. Transit (Ho-Sogakofe-Accra) GHC 30
     2  Direct  (Ho-Accra)          GHC 24`
@@ -56,6 +57,7 @@ app.post('*', (req, res) => {
             2  Direct  (Ho-Accra)          GHC 22`
             res.send(response)
  }else if (text == '2*1') {
+   //Level 2 for Kumasi
                 let response = `CON Choose Your VIP Bus Package
                 1. Transit (Ho-Accra-Kumasi) GHC 70
                 2  Direct  (Ho-Accra)          GHC 58`
@@ -70,6 +72,7 @@ app.post('*', (req, res) => {
                         1. Transit (Ho-Accra-Kumasi) GHC 63
                         2  Direct  (Ho-Accra)          GHC 51`
                         res.send(response)}else if (text == '3*1') {
+   //Level 2 for Tamale      
                             let response = `CON Choose Your VIP Bus Package
                             1. Direct (Ho-Tamale) GHC 120`
                             res.send(response)
@@ -82,10 +85,22 @@ app.post('*', (req, res) => {
                                     1. Transit (Ho-Tamale) GHC 140`
                                     res.send(response)
   }else if (text == '1*1*1') {
-        // Business logic for first level response
-        let response = `CON Enter Mobile Money Wallet Number`
-        // let response = `END Your account number is ${accountNumber}`
+    //Level 3 for Accra
+        let response = `CON You have chosen VIP Bus Transit GHC 28. Enter Mobile Money Wallet Number`
         res.send(response)
+      }else if (text == '1*1*2') {
+        let response = `CON You have chosen VIP Bus Direct GHC 24. Enter Mobile Money Wallet Number`
+        res.send(response)
+      }else if (text == '2*1*1') {
+          // Business logic for first level response
+          let response = `CON Enter Mobile Money Wallet Number`
+          // let response = `END Your account number is ${accountNumber}`
+          res.send(response)
+        }else if (text == '2*1*2') {
+          // Business logic for first level response
+          let response = `CON Enter Mobile Money Wallet Number`
+          // let response = `END Your account number is ${accountNumber}`
+          res.send(response)
   } else if (text == '1*2') {
     // This is a second level response where the user selected 1 in the first instance
     let balance = 'NGN 10,000'
