@@ -25,13 +25,13 @@ app.post('*', (req, res) => {
     // Business logic for first level response
     let response = `CON Choose Your Prefered Vehicle To Accra
     1. VIP Bus
-    2. Sprinter Benz Bus
+    2. Sprinter
     3. Toyota Hiace`
     res.send(response)
   } else if (text == '2') {
     let response = `CON Choose Your Prefered Vehicle To Kumasi
     1. VIP Bus
-    2. Sprinter Benz Bus
+    2. Sprinter
     3. Toyota Hiace`
     res.send(response)
   } else if (text == '3') {
