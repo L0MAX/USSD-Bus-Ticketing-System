@@ -85,12 +85,26 @@ app.post('*', (req, res) => {
                                     1. Transit (Ho-Tamale) GHC 140`
                                     res.send(response)
   }else if (text == '1*1*1') {
-    //Level 3 for Accra
-        let response = `CON You have chosen VIP Bus Transit GHC 28. Enter Mobile Money Wallet Number`
+    //Level 3 for Accra VIP Bus
+        let response = `CON You have chosen VIP Bus Transit GHC 30. Enter Mobile Money Wallet Number`
         res.send(response)
       }else if (text == '1*1*2') {
         let response = `CON You have chosen VIP Bus Direct GHC 24. Enter Mobile Money Wallet Number`
         res.send(response)
+      }else if (text == '1*2*1') {
+          //Level 3 for Accra Sprinter
+              let response = `CON You have chosen Sprinter Transit GHC 28. Enter Mobile Money Wallet Number`
+              res.send(response)
+            }else if (text == '1*2*2') {
+              let response = `CON You have chosen Sprinter Direct GHC 23. Enter Mobile Money Wallet Number`
+              res.send(response)
+            }else if (text == '1*3*1') {
+                //Level 3 for Accra Toyota Hiace
+                    let response = `CON You have chosen Toyota Hiace Transit GHC 26. Enter Mobile Money Wallet Number`
+                    res.send(response)
+            }else if (text == '1*3*2') {
+              let response = `CON You have chosen Toyota Hiace Direct GHC 22. Enter Mobile Money Wallet Number`
+              res.send(response)
       }else if (text == '2*1*1') {
           // Business logic for first level response
           let response = `CON Enter Mobile Money Wallet Number`
