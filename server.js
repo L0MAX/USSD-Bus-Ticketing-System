@@ -114,18 +114,18 @@ app.post('*', (req, res) => {
               }else if (text == '2*1*2') {
                     let response = `CON You have chosen VIP Bus Direct @ GHC 58. \n Enter Mobile Money Wallet Number`
                     res.send(response)
-              }else if (text == '2*1*1') {
+              }else if (text == '2*2*1') {
               //level 3 for Kumasi Sprinter
                     let response = `CON You have chosen Sprinter Transit @ GHC 60. \n Enter Mobile Money Wallet Number`
                     res.send(response)
-              }else if (text == '2*1*2') {
+              }else if (text == '2*2*2') {
                     let response = `CON You have chosen Sprinter Direct @ GHC 50. \n Enter Mobile Money Wallet Number`
                     res.send(response)
-              }else if (text == '2*1*1') {
+              }else if (text == '2*3*1') {
               //level 3 for Kumasi Toyota Hiace
                     let response = `CON You have chosen Toyota Hiace Transit @ GHC 63. \n Enter Mobile Money Wallet Number`
                     res.send(response)
-              }else if (text == '2*1*2') {
+              }else if (text == '2*3*2') {
                     let response = `CON You have chosen Toyota Hiace Direct @ GHC 51. \n Enter Mobile Money Wallet Number`
                     res.send(response)
 
