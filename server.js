@@ -88,58 +88,88 @@ app.post('*', (req, res) => {
     res.send(response)
           }else if (text == '1*1*1') {
             //Level 3 for Accra VIP Bus
-            let response = `CON You have chosen VIP Bus Transit @ GHC 30 \n Enter Mobile Money Wallet Number`
+            let response = `END You have chosen VIP Bus Transit to Accra @ GHC 30 \n
+            You will receive a prompt shortly to confirm your purchase. \n
+             Thank you for doing business with us. \n Aces, the giants in transport services`
             res.send(response)
           }else if (text == '1*1*2') {
-            let response = `CON You have chosen VIP Bus Direct @ GHC 24. \n Enter Mobile Money Wallet Number`
+            let response = `END You have chosen VIP Bus Direct to Accra @ GHC 24. 
+            \n You will receive a prompt shortly to confirm your purchase. 
+            \n Thank you for doing business with us. \n Aces, the giants in transport services`
             res.send(response)
           }else if (text == '1*2*1') {
               //Level 3 for Accra Sprinter
-              let response = `CON You have chosen Sprinter Transit @ GHC 28. \n Enter Mobile Money Wallet Number`
+              let response = `END You have chosen Sprinter Transit to Accra @ GHC 28. \n 
+              You will receive a prompt shortly to confirm your purchase. \n 
+              Thank you for doing business with us. \n Aces, the giants in transport services`
               res.send(response)
             }else if (text == '1*2*2') {
-              let response = `CON You have chosen Sprinter Direct @ GHC 23. \n Enter Mobile Money Wallet Number`
+              let response = `END You have chosen Sprinter Direct to Accra @ GHC 23. \n 
+              You will receive a prompt shortly to confirm your purchase. \n 
+              Thank you for doing business with us. \n Aces, the giants in transport services`
               res.send(response)
             }else if (text == '1*3*1') {
                 //Level 3 for Accra Toyota Hiace
-                    let response = `CON You have chosen Toyota Hiace Transit @ GHC 26. \nEnter Mobile Money Wallet Number`
+                    let response = `END You have chosen Toyota Hiace Transit to Accra @ GHC 26. 
+                    \nYou will receive a prompt shortly to confirm your purchase. \n 
+                    Thank you for doing business with us. \n Aces, the giants in transport services`
                     res.send(response)
             }else if (text == '1*3*2') {
-              let response = `CON You have chosen Toyota Hiace Direct @ GHC 22. \n Enter Mobile Money Wallet Number`
+              let response = `END You have chosen Toyota Hiace Direct to Accra @ GHC 22. 
+              \n You will receive a prompt shortly to confirm your purchase. \n 
+              Thank you for doing business with us. \n Aces, the giants in transport services`
               res.send(response)
               }else if (text == '2*1*1') {
               //level 3 for Kumasi VIP bus
-                    let response = `CON You have chosen VIP Bus Transit @ GHC 70. \n Enter Mobile Money Wallet Number`
+                    let response = `END You have chosen VIP Bus Transit to Kumasi @ GHC 70. 
+                    \n You will receive a prompt shortly to confirm your purchase. 
+                    \n Thank you for doing business with us. \n Aces, the giants in transport services`
                     res.send(response)
               }else if (text == '2*1*2') {
-                    let response = `CON You have chosen VIP Bus Direct @ GHC 58. \n Enter Mobile Money Wallet Number`
+                    let response = `END You have chosen VIP Bus Direct to Kumasi @ GHC 58. 
+                    \n You will receive a prompt shortly to confirm your purchase. 
+                    \n Thank you for doing business with us. \n Aces, the giants in transport services`
                     res.send(response)
               }else if (text == '2*2*1') {
               //level 3 for Kumasi Sprinter
-                    let response = `CON You have chosen Sprinter Transit @ GHC 60. \n Enter Mobile Money Wallet Number`
+                    let response = `END You have chosen Sprinter Transit to Kumasi @ GHC 60. 
+                    \n You will receive a prompt shortly to confirm your purchase. \n 
+                    Thank you for doing business with us. \n Aces, the giants in transport services`
                     res.send(response)
               }else if (text == '2*2*2') {
-                    let response = `CON You have chosen Sprinter Direct @ GHC 50. \n Enter Mobile Money Wallet Number`
+                    let response = `END You have chosen Sprinter Direct to Kumasi @ GHC 50. 
+                    \n You will receive a prompt shortly to confirm your purchase. \n 
+                    Thank you for doing business with us. \n Aces, the giants in transport services`
                     res.send(response)
               }else if (text == '2*3*1') {
               //level 3 for Kumasi Toyota Hiace
-                    let response = `CON You have chosen Toyota Hiace Transit @ GHC 63. \n Enter Mobile Money Wallet Number`
+                    let response = `END You have chosen Toyota Hiace Transit to Kumasi @ GHC 63. 
+                    \n You will receive a prompt shortly to confirm your purchase. \n 
+                    Thank you for doing business with us. \n Aces, the giants in transport services`
                     res.send(response)
               }else if (text == '2*3*2') {
-                    let response = `CON You have chosen Toyota Hiace Direct @ GHC 51. \n Enter Mobile Money Wallet Number`
+                    let response = `END You have chosen Toyota Hiace Direct to Kumasi @ GHC 51. 
+                    \n You will receive a prompt shortly to confirm your purchase. \n 
+                    Thank you for doing business with us. \n Aces, the giants in transport services`
                     res.send(response)
 
                   }else if (text == '3*1*1') {
                     //level 3 for Tamale VIP bus
-                          let response = `CON You have chosen VIP Bus Direct @ GHC 120. \n Enter Mobile Money Wallet Number`
+                          let response = `END You have chosen VIP Bus Direct to Tamale @ GHC 120. \n
+                          You will receive a prompt shortly to confirm your purchase. \n Thank you for doing business with us.
+                           \n Aces, the giants in transport services`
                           res.send(response)
                     }else if (text == '3*2*1') {
                     //level 3 for Tamale Sprinter
-                          let response = `CON You have chosen Sprinter Direct @ GHC 130. \n Enter Mobile Money Wallet Number`
+                          let response = `END You have chosen Sprinter Direct to Tamale @ GHC 130. \n
+                          You will receive a prompt shortly to confirm your purchase. \n
+                           Thank you for doing business with us. \n Aces, the giants in transport services`
                           res.send(response)
                     }else if (text == '3*3*1') {
                     //level 3 for Tamale Toyota Hiace
-                          let response = `CON You have chosen Toyota Hiace Direct @ GHC 140. \n Enter Mobile Money Wallet Number`
+                          let response = `END You have chosen Toyota Hiace Direct to Tamale @ GHC 140. \n
+                           You will receive a prompt shortly to confirm your purchase. \n 
+                           Thank you for doing business with us. \n Aces, the giants in transport services`
                           res.send(response)
                     } else if (text == '3*3*1*1') {
     // This is a terminal request. Note how we start the response with END
